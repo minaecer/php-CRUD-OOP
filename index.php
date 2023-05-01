@@ -11,13 +11,13 @@ if (isset($_GET['no'])) {
 
 
     if ($users->deleteUser($_GET['no'])) {
-        $successdMessage = "<div class='alert alert-success' role='alert'>
+       echo "<div class='alert alert-success' role='alert'>
      Silme İşlemi Başarılı.
       </div>";
     } else {
 
 
-        $ErrorMessage = "<div class='alert alert-danger' role='alert'>
+       echo "<div class='alert alert-danger' role='alert'>
       Silinirken Bir Hata Oluştu.
       </div>";
     }
